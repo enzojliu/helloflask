@@ -1,4 +1,7 @@
 import os
+
+from jinja2.utils import generate_lorem_ipsum
+from urllib.parse import urlparse, urljoin
 from flask import Flask, request, redirect, url_for, abort, make_response, json, jsonify, session
 
 app = Flask(__name__)
@@ -52,15 +55,6 @@ def teapot(drink):
 def not_found():
     abort(404)
 
-
-# change MIMEtype
-@app.route('/foo')
-def foo():
-    response = make_response('Hello, World')
-    response.mimetype = 'type/plain'
-    return response
-
-
 # json
 @app.route('/fo')
 def fo():
@@ -68,12 +62,6 @@ def fo():
     response = make_response(json.dumps(data))
     response.mimetype = 'application/json'
     return response
-
-
-# jsonify() 函数
-@app.route('/fooo')
-def fooo():
-    return jsonify(message='Error!'), 500
 
 
 # set_cookie 代码清单 2-4  http/app.py：设置 cookie
@@ -104,3 +92,60 @@ def logout():
     if 'logged_in' in session:
         session.pop('logged_in')
     return redirect(url_for('hello'))
+
+# redirect to last page
+@app.route('/foo')
+def foo():
+    return '<h1>Foo page</h1><a href="%s">Do something and redirect</a>' % url_for('do_something', next=request.full_path)
+
+@app.route('/bar')
+def bar():
+    return '<h1>Bar page</h1><a href="%s">Do something and redirect</a>' % url_for('do_something', next=request.full_path)
+
+# do_something
+@app.route('/do_something_and_redirect')
+def do_something():
+    # do something
+    return redirect_back()
+
+
+def redirect_back(default='hello', **kwargs):
+    for target in request.args.get('next'), request.referrer:
+        if target:
+            return redirect(target)
+    return redirect(url_for(default, **kwargs))
+
+
+def is_safe_url(target):
+    ref_url = urlparse(request.host_url)
+    test_url = urlparse(urljoin(request.host_url, target))
+    return test_url.scheme in ('http', 'https') and \
+           ref_url.netloc == test_url.netloc
+
+
+@app.route('/post')
+def show_post():
+    post_body = generate_lorem_ipsum(n=2)  # 生成两段随机文本
+    return '''
+<h1>A very long post</h1>
+<div class="body">%s</div>
+<button id="load">Load More</button>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script typr="text/javascript">
+$(function() {
+        $('#load').click(function() {
+                $.ajax({
+                        url:'/more',     // 目标 URL
+                        type:'get',      // 请求方法
+                        success:function(data){        // 返回2XX响应后触发的回调函数
+                                $('.body').append(data);  // 将返回的响应插入到页面中
+                        }
+                }）
+        }）
+})
+</script>''' % post_body
+    
+    
+    
+    
+    '''

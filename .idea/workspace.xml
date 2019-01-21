@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demos/http/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+            <state relative-caret-position="429">
+              <caret line="144" column="2" lean-forward="true" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -34,6 +34,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>target</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,8 +53,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="703" />
-    <option name="y" value="23" />
+    <option name="x" value="674" />
+    <option name="y" value="10" />
     <option name="width" value="685" />
     <option name="height" value="765" />
   </component>
@@ -58,6 +63,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,7 +92,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,9 +133,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="703" y="23" width="685" height="765" extended-state="1" />
+    <frame x="674" y="10" width="685" height="765" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10510046" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10510046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -151,15 +157,15 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.py" />
+    <entry file="file://$PROJECT_DIR$/demos/hello/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/demos/hello/.flaskenv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/hello/.env">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/hello/app.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -170,8 +176,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/http/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        <state relative-caret-position="429">
+          <caret line="144" column="2" lean-forward="true" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
