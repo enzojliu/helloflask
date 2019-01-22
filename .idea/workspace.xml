@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demos/http/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="144" column="2" lean-forward="true" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
+            <state relative-caret-position="129">
+              <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -52,10 +52,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="674" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="677" />
     <option name="y" value="10" />
-    <option name="width" value="685" />
+    <option name="width" value="682" />
     <option name="height" value="765" />
   </component>
   <component name="ProjectView">
@@ -133,8 +133,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="674" y="10" width="685" height="765" extended-state="0" />
-    <editor active="true" />
+    <frame x="677" y="10" width="682" height="765" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.10510046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -147,7 +146,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.30107528" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.50949365" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -176,8 +175,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/http/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="144" column="2" lean-forward="true" selection-start-line="144" selection-start-column="2" selection-end-line="144" selection-end-column="2" />
+        <state relative-caret-position="129">
+          <caret line="151" column="36" lean-forward="true" selection-start-line="151" selection-start-column="36" selection-end-line="151" selection-end-column="36" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

@@ -1,5 +1,6 @@
 import os
 
+from jinja2 import escape
 from jinja2.utils import generate_lorem_ipsum
 from urllib.parse import urlparse, urljoin
 from flask import Flask, request, redirect, url_for, abort, make_response, json, jsonify, session
@@ -14,8 +15,8 @@ def hello():
     name = request.args.get('name')  # 获取查询参数name的值
     if name is None:
         name = request.cookies.get('name', 'Human')
-    response = '<h1>Hello, %s!<h1>' % name  # 插入到返回值中
-    # 根据 用户 认证 状态 返回 不同 的 内容
+    response = '<h1>Hello, %s!<h1>' % escape(name)  # escape name to avoid XSS
+    # return different response according to the user's authentication status
     if 'logged_in' in session:
         response += '[Authenticated]'
     else:
@@ -122,7 +123,7 @@ def is_safe_url(target):
     return test_url.scheme in ('http', 'https') and \
            ref_url.netloc == test_url.netloc
 
-
+# AJAX
 @app.route('/post')
 def show_post():
     post_body = generate_lorem_ipsum(n=2)  # 生成两段随机文本
@@ -131,21 +132,21 @@ def show_post():
 <div class="body">%s</div>
 <button id="load">Load More</button>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script typr="text/javascript">
+<script type="text/javascript">
 $(function() {
-        $('#load').click(function() {
-                $.ajax({
-                        url:'/more',     // 目标 URL
-                        type:'get',      // 请求方法
-                        success:function(data){        // 返回2XX响应后触发的回调函数
-                                $('.body').append(data);  // 将返回的响应插入到页面中
-                        }
-                }）
+    $('#load').click(function() {
+        $.ajax({
+            url:'/more',       // 目标 URL
+            type:'get',        // 请求方法
+            success:function(data){           // 返回2XX响应后触发的回调函数
+                $('.body').append(data);      // 将返回的响应插入到页面中
+            }
         }）
+    }）
 })
 </script>''' % post_body
-    
-    
-    
-    
-    '''
+
+
+@app.route('/more')
+def load_post():
+    return generate_lorem_ipsum(n=1)
