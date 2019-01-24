@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Markup, url_for,
 
 app=Flask(__name__)
 
@@ -33,4 +33,16 @@ def index():
 @app.context_processor
 def inject_foo():
     foo = 'I am foo.'
-    return dict(foo=foo)
+    return dict(foo=foo)  # 等同于return {'foo': foo}
+
+# register template global function
+@app.template_global()
+def bar():
+    return 'I am bar.'
+
+# 代码清单3-6 　 template/app.py：注册自定义测试器
+@app.template_test()
+def baz(n):
+    if n == 'baz':
+        return True
+    return False
