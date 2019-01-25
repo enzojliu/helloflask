@@ -1,6 +1,8 @@
-from flask import Flask, render_template, Markup, url_for,
+from flask import Flask, render_template, Markup, url_for
 
 app=Flask(__name__)
+app.jinja_env.trim_blocks = True
+app.jinja_env.lstrip_block = True
 
 user = {
     'username': 'Grey Li',
