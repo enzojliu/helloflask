@@ -42,9 +42,20 @@ def inject_foo():
 def bar():
     return 'I am bar.'
 
+# register template filter
+@app.template_filter()
+def musical(s):
+    return s + Markup(' &#9835;')
+
 # 代码清单3-6 　 template/app.py：注册自定义测试器
 @app.template_test()
 def baz(n):
     if n == 'baz':
         return True
     return False
+
+@app.route('/watchlist2')
+def watchlist_with_static():
+    return render_template('watchlist_with_static.html', user=user, movies=movies)
+
+

@@ -9,6 +9,7 @@
     <li>Filter: {{ foo|musical }} </li>
     <li>Global: {{ bar() }} </li>
     <li>Test: {% if name is baz %}I am baz.{% endif %}</li>
-    <li>Macro: {{ qux()amount=5 }} </li>
+    <li>Macro: {{ qux(amount=1) }}</li>
+    <li><a href="{{ url_for('watchlist_with_static') }}">Watchlist with image and styles.</a></li>
 </ul>
 {% endblock %}

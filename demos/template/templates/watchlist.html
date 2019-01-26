@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>{{ user.username }}'s Watchlist</title>
 </head>
 <body>
@@ -12,11 +12,11 @@
 {% else %}
     <i>This user has not provided a bio.</i>
 {% endif %}
-{# Below is the movie list (this is comment) #}
+{# 下面是电影清单（这是注释） #}
 <h5>{{ user.username }}'s Watchlist ({{ movies|length }}):</h5>
 <ul>
     {% for movie in movies %}
-    <li>{{ movie.name }} - {{ movie.year }}</li>
+        <li>{{ movie.name }} - {{ movie.year }}</li>
     {% endfor %}
 </ul>
 </body>
