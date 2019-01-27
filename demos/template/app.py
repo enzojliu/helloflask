@@ -1,61 +1,85 @@
-from flask import Flask, render_template, Markup, url_for
+from flask import Flask, render_template, url_for, Markup, flash, redirect
 
-app=Flask(__name__)
+app = Flask(__name__)
+app.secret_key = 'secret string'
 app.jinja_env.trim_blocks = True
-app.jinja_env.lstrip_block = True
+app.jinja_env.lstrip_blocks = True
 
 user = {
-    'username': 'Grey Li',
+    'username': 'Enzo Liu',
     'bio': 'A boy who loves movies and music.',
 }
 
 movies = [
-    {'name': 'My Neighbo Totoro', 'year': '1988'},
+    {'name': 'My Neighbor Totoro', 'year': '1988'},
     {'name': 'Three Colours trilogy', 'year': '1993'},
     {'name': 'Forrest Gump', 'year': '1994'},
-    {'name': 'Perfect Blue', 'year': '1987'},
+    {'name': 'Perfect Blue', 'year': '1997'},
     {'name': 'The Matrix', 'year': '1999'},
     {'name': 'Memento', 'year': '2000'},
-    {'name': 'The Bucket List', 'year': '2007'},
+    {'name': 'The Bucket list', 'year': '2007'},
     {'name': 'Black Swan', 'year': '2010'},
     {'name': 'Gone Girl', 'year': '2014'},
-    {'name': 'Coco', 'year': '2017'},
+    {'name': 'CoCo', 'year': '2017'},
 ]
-# render HTML templates
+
+
 @app.route('/watchlist')
 def watchlist():
     return render_template('watchlist.html', user=user, movies=movies)
 
-# the main page
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
-# 3-3 模板上下文处理函数
+
+# register template context handler
 @app.context_processor
-def inject_foo():
+def inject_info():
     foo = 'I am foo.'
-    return dict(foo=foo)  # 等同于return {'foo': foo}
+    return dict(foo=foo)  # equal to: return {'foo': foo}
+
 
 # register template global function
 @app.template_global()
 def bar():
     return 'I am bar.'
 
-# register template filter
+
+# reigster template filter
 @app.template_filter()
 def musical(s):
     return s + Markup(' &#9835;')
 
-# 代码清单3-6 　 template/app.py：注册自定义测试器
+
+# register template test
 @app.template_test()
 def baz(n):
     if n == 'baz':
         return True
     return False
 
+
 @app.route('/watchlist2')
 def watchlist_with_static():
     return render_template('watchlist_with_static.html', user=user, movies=movies)
+
+# message flashing
+@app.route('/flash')
+def just_flash():
+    flash('I am flash, who is looking for me?')
+    return redirect(url_for('index'))
+
+# 404 error handler
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('errors/404.html'), 404
+
+# 500 error handler
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('errors/500.html'), 500
+
 
 

@@ -3,15 +3,21 @@
 <head>
     {% block head %}
         <meta charset="utf-8">
-        <title>{% blcok title %}Template - HelloFlask{% endblock %}</title>
-        {% block styles %}{% endblock %}
+        <title>{% block title %}Template - HelloFlask{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% block styles %}
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'styles.css') }}">
+        {% endblock %}
     {% endblock %}
 </head>
 <body>
 <nav>
-    <ul><li><a href="{{ url_for('/') }}">Home</a></li></ul>
+    <ul><li><a href="{{ url_for('index') }}">Home</a></li></ul>
 </nav>
 <main>
+    {% for message in get_flashed_messages() %}
+        <div class="alert">{{ message }}</div>
+    {% endfor %}
     {% block content %}{% endblock %}
 </main>
 <footer>
