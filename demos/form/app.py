@@ -17,7 +17,7 @@ def html():
     form = LoginForm()
     if request.method == 'POST':
         username = request.form.get('username')
-        flash('Welcome home, %s' % username)
+        flash('Welcome home, %s!' % username)
         return redirect(url_for('index'))
     return render_template('pure_html.html')
 
@@ -25,4 +25,4 @@ def html():
 app.route('/basic')
 def basic():
     form = LoginForm()
-    return render_template('login.html', form=form)
+    return render_template('basic.html', form=form)
