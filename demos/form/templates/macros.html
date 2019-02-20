@@ -2,7 +2,8 @@
     {{ field.label }}<br>
     {{ field(**kwargs) }}<br>
     {% if field.errors -%}
-        {% for error in field.error -%}
+        {% for error in field.errors -%}
             <small class="error">{{ error }}</small><br>
-        {%- endif %}
+        {%- endfor %}
+    {%- endif %}
 {% endmacro %}

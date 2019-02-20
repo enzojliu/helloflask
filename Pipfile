@@ -10,6 +10,8 @@ watchdog = "*"
 flask = "*"
 python-dotenv = "*"
 flask-wtf = "*"
+flask-ckeditor = "*"
+flask-dropzone = "*"
 
 [requires]
 python_version = "3.7"
