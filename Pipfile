@@ -12,6 +12,9 @@ python-dotenv = "*"
 flask-wtf = "*"
 flask-ckeditor = "*"
 flask-dropzone = "*"
+wtforms = "*"
+flask-wtforms = "*"
+loginform = "*"
 
 [requires]
 python_version = "3.7"

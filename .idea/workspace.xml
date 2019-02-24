@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88092469-4c73-42be-b415-920d5afb3ca1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demos/form/static/bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/static/creditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/static/custom_validator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/static/dropzone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/static/post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/static/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/static/uploaded.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/templates/2form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/templates/2form2view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demos/form/templates/2submit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/helloflask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/helloflask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demos/form/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/demos/form/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/creditor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/custom_validator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/dropzone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demos/form/static/uploaded.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demos/form/templates/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/demos/form/templates/basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demos/form/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/demos/form/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demos/form/templates/macros.html" beforeDir="false" afterPath="$PROJECT_DIR$/demos/form/templates/macros.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,14 +24,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demos/form/templates/watchlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demos/form/templates/watchlist_with_static.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/form/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+            <state>
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demos/form/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1311">
+              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demos/form/templates/pure_html.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demos/form/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <folding>
+                <element signature="e#895#901#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demos/form/templates/basic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -45,8 +101,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -54,6 +110,8 @@
     <findStrings>
       <find>target</find>
       <find>index</find>
+      <find>os</find>
+      <find>boot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,13 +138,10 @@
         <option value="$PROJECT_DIR$/demos/template/app.py" />
         <option value="$PROJECT_DIR$/demos/form/pure_html.html" />
         <option value="$PROJECT_DIR$/demos/form/static/styles.css" />
-        <option value="$PROJECT_DIR$/demos/form/forms.py" />
-        <option value="$PROJECT_DIR$/demos/form/app.py" />
         <option value="$PROJECT_DIR$/demos/form/templates/2form.html" />
         <option value="$PROJECT_DIR$/demos/form/templates/2form2view.html" />
         <option value="$PROJECT_DIR$/demos/form/templates/2submit.html" />
         <option value="$PROJECT_DIR$/demos/form/templates/base.html" />
-        <option value="$PROJECT_DIR$/demos/form/templates/basic.html" />
         <option value="$PROJECT_DIR$/demos/form/static/bootstrap.html" />
         <option value="$PROJECT_DIR$/demos/form/static/creditor.html" />
         <option value="$PROJECT_DIR$/demos/form/static/custom_validator.html" />
@@ -94,15 +149,20 @@
         <option value="$PROJECT_DIR$/demos/form/templates/index.html" />
         <option value="$PROJECT_DIR$/demos/form/templates/macros.html" />
         <option value="$PROJECT_DIR$/demos/form/static/post.html" />
-        <option value="$PROJECT_DIR$/demos/form/templates/pure_html.html" />
         <option value="$PROJECT_DIR$/demos/form/static/upload.html" />
         <option value="$PROJECT_DIR$/demos/form/static/uploaded.html" />
+        <option value="$PROJECT_DIR$/demos/form/templates/pure_html.html" />
+        <option value="$PROJECT_DIR$/demos/form/templates/basic.html" />
+        <option value="$PROJECT_DIR$/demos/form/appp.py" />
+        <option value="$PROJECT_DIR$/demos/form/__init__.py" />
+        <option value="$PROJECT_DIR$/demos/form/app.py" />
+        <option value="$PROJECT_DIR$/demos/form/forms.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="717" />
-    <option name="width" value="640" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="661" />
+    <option name="width" value="696" />
     <option name="height" value="769" />
   </component>
   <component name="ProjectView">
@@ -110,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,12 +199,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/demos/template/templates/watchlist.html" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,9 +242,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="661" y="0" width="696" height="769" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.02232143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.045592707" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -195,8 +255,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4970588" weight="0.30031446" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7433036" visible="true" weight="0.40399384" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25669643" side_tool="true" weight="0.40490797" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7401216" visible="true" weight="0.16037735" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25987843" side_tool="true" visible="true" weight="0.16037735" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32861635" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -320,23 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/form/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding>
-            <element signature="e#895#901#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/form/templates/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demos/form/static/bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
@@ -389,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/form/templates/pure_html.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demos/form/static/upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -430,20 +466,65 @@
     <entry file="file://$PROJECT_DIR$/demos/form/static/css/bootstrap-reboot.css.map">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/form/forms.py">
+    <entry file="file://$PROJECT_DIR$/demos/form/appp.py" />
+    <entry file="file://$PROJECT_DIR$/demos/form/templates/watchlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/form/templates/pure_html.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/form/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#895#901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/form/templates/watchlist_with_static.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/form/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/form/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/form/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        <state>
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/form/templates/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
