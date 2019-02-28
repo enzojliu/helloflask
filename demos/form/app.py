@@ -56,7 +56,7 @@ def basic():
     form = LoginForm()
     if form.validate_on_submit():
         username = form.username.data
-        flash('Welcome home, %s!' % username)
+        flash('Welcome home, &s!' & username)
         return redirect(url_for('index'))
     return render_template('basic.html', form=form)
 

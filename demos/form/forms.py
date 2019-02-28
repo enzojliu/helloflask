@@ -5,6 +5,17 @@ from wtforms import StringField, PasswordField, BooleanField, IntegerField, \
     TextAreaField, SubmitField, MultipleFileField
 from wtforms.validators import DataRequired, Length, ValidationError, Email
 
+app = Flask(__name__)
+app.config['WTF_I18N_ENABLED'] = False
+
+class MyBaseForm(FlaskForm):
+    class Meta:
+        locales = ['zh']
+
+class HelloForm(MyBaseForm):
+    name = StringField('Name', validators=[DataRequired()])
+    submit = SubmitField()
+
 
 # 4.3.1 basic form example
 class LoginForm(FlaskForm):
